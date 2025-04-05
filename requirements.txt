@@ -1,0 +1,10 @@
+
+django
+django-cors-header
+djongo
+djangorestframework
+typing_extensions
+tzdata
+Django
+djangorestframework-simplejwt
+gunicorn
