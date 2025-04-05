@@ -122,6 +122,12 @@ def manage_task(request, task_id):
             deadline = data.get('deadline')
             status = data.get('status')
 
+            # Convert the deadline to a datetime object
+            try:
+                deadline = datetime.strptime(deadline, "%Y-%m-%dT%H:%M:%S.%f")
+            except ValueError:
+                return JsonResponse({'error': 'Invalid deadline format, should be YYYY-MM-DDTHH:MM:SS.sss'}, status=400)
+
             if title:
                 task.title = title
             if content:
