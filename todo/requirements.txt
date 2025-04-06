@@ -1,9 +1,0 @@
-django
-django-cors-headers
-djongo
-djangorestframework
-typing_extensions
-tzdata
-Django
-djangorestframework-simplejwt
-gunicorn
